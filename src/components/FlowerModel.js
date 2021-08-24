@@ -14,17 +14,17 @@ export class FlowerModel extends Component {
                         < Form onSubmit={this.props.handelUpdate}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>instructions</Form.Label>
-                                <Form.Control type="text" defaultValue={this.props.data.instructions} />
+                                <Form.Control type="text" defaultValue={this.props.data.instructions} name='instructions' />
 
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>photo</Form.Label>
-                                <Form.Control type="text" defaultValue={this.props.data.photo} />
+                                <Form.Control type="text" defaultValue={this.props.data.photo} name='photo'/>
 
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>instructions</Form.Label>
-                                <Form.Control type="text" defaultValue={this.props.data.name} />
+                                <Form.Control type="text" defaultValue={this.props.data.name} name='name' />
 
                             </Form.Group>
                         </Form>

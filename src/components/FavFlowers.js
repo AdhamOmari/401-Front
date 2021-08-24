@@ -63,8 +63,8 @@ class FavFlowers extends React.Component {
     e.preventDefault();
     const requbdate = {
       email: this.props.auth0.user.email,
-      instnameructions: e.target.name.value,
-      photo: e.target.name.value,
+      instnameructions: e.target.instnameructions.value,
+      photo: e.target.photo.value,
       name: e.target.name.value
 
 
@@ -81,7 +81,7 @@ class FavFlowers extends React.Component {
         <Favcards data={this.state.data}
           deleteFan={this.deleteFan}
           handelShow={this.handelShow}
-          handelClose={this.state.handelClose}
+          handelClose={this.handelClose}
           handelUpdate={this.handelUpdate}
         />
       </>
