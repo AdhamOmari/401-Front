@@ -2,6 +2,8 @@ import React from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import AllData from './AllData';
+import { withAuth0 } from '@auth0/auth0-react';
+
 
 class Home extends React.Component {
 
@@ -46,4 +48,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default withAuth0(Home);
